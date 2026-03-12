@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">⚔ Vertiè<span>r</span>es</a>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/login">Logout</a></li>
+  </ul>
+</nav>
+
+
+<div class="container" style="padding-top:3rem; padding-bottom:5rem;">
+
+  <div style="margin-bottom:2rem;">
+    <h1 style="font-family:var(--display); font-size:1.8rem; color:var(--gold);">
+      Admin Dashboard
+    </h1>
+  </div>
+
+
+  <div class="terminal">
+
+    <span class="comment">Access granted</span><br><br>
+
+    <span class="prompt">System:</span> Welcome to the admin panel<br><br>
+
+    <span class="prompt">Flag:</span><br>
+
+    <span style="color:#7ec87e; font-family:var(--mono);">
+      {{ flag }}
+    </span>
+
+  </div>
+
+</div>
+
+
+<footer>
+  <span>CTF LOGIN PORTAL</span> — CHALLENGE AUTHOR — shadow_alvan
+</footer>
+
+</body>
+</html>
