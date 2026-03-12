@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  login-bypass:
+    build: .
+    container_name: login-bypass
+    ports:
+      - "5003:5000"      # Expose container port 5000 on host 5003
+    restart: unless-stopped
+    environment:
+      FLASK_ENV: development
+    volumes:
+      - ./users.db:/app/users.db   # Persist the database
